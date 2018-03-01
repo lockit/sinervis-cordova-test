@@ -18,8 +18,12 @@
     				margin: 5px !important;
     				position: relative !important;
     		}
+        #cameraButton{
+          width: 30px;
+          height: auto;
+        }
   		</style>
-      <title>Hello World!!!</title>
+      <title>Gallery e altri test</title>
     </head>
     <body>
 		<div data-role="page" id="page1">
@@ -27,7 +31,13 @@
 			<div data-role="content">Questa è un app per provare qualche plugin</div>
 			<div data-role="collapsible-set">
 				<div id="cjp-accordion1" data-role="collapsible" data-collapsed="false">
-					<h3>Section 1</h3>
+					<h3>Galleria</h3>
+          <div>
+            <img src="img/icon_camera.png" id="cameraButton" />
+          </div>
+          <div>
+            <img id="myImage" />
+          </div>
 					<p></p>
           <p>Page 1 content goes here</p>
           <p></p>
@@ -59,5 +69,6 @@
 		</script>
     <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/camera_plugin.js"></script>
   </body>
 </html>
