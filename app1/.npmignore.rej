@@ -1,0 +1,4 @@
+diff a/app1/.npmignore b/app1/.npmignore	(rejected hunks)
+@@ -0,0 +1,2 @@
++# OS X
++.DS_Store
