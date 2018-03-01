@@ -48,10 +48,10 @@ var camera_manager = {
         );
     },
     onMoveSuccess: function(){
-        console.log(entry);
+        console.log("");
     }, 
 
     onResolveError: function() {
-        console.log(entry);
+        console.log("");
     },
 };
