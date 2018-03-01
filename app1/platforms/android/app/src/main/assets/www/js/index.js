@@ -31,7 +31,7 @@ var app = {
         var gallery = $("#myGallery");
         gallery.html("");
         for (var i = 0; i < selection.length; i++) {
-            var img ='<div><img src="' + selection[i].nativeURL + '"/></div>';
+            var img ='<div class="container"><img src="' + selection[i].nativeURL + '"/></div>';
             gallery.append(img);
         }
     },

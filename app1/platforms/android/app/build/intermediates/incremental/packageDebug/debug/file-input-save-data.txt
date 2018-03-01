@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 01 15:44:10 CET 2018
+#Thu Mar 01 16:00:08 CET 2018
 5.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 42.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 32.set=ASSET
