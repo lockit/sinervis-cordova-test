@@ -1,6 +1,7 @@
 #Internal package file, do not edit.
-#Thu Mar 01 10:56:29 CET 2018
+#Thu Mar 01 11:03:25 CET 2018
 25.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova.js
+41.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 25.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 22.set=ANDROID_RESOURCE
 36.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\js\\index.js
@@ -14,7 +15,7 @@
 30.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 14.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 16.set=ASSET
-count=41
+count=42
 6.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\android\\nativeapiprovider.js
 6.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 26.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\js\\jquery-1.5.0.mobile.min.css
@@ -70,6 +71,7 @@ count=41
 39.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\icon.png
 2.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 39.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+41.set=ANDROID_RESOURCE
 22.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\xml\\config.xml
 22.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 0.set=ASSET
@@ -94,7 +96,7 @@ count=41
 23.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\AndroidManifest.xml
 29.set=ASSET
 23.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
-40.set=ANDROID_RESOURCE
+40.set=ASSET
 34.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\css\\index.css
 34.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 18.set=DEX
@@ -107,10 +109,10 @@ count=41
 4.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\plugins\\cordova-plugin-camera\\www\\CameraPopoverHandle.js
 4.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 23.set=ANDROID_RESOURCE
-40.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxxhdpi-v4\\icon.png
+40.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\js\\camera_manager.js
 24.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova_plugins.js
 9.set=ANDROID_RESOURCE
-40.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+40.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 39.set=ANDROID_RESOURCE
 24.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 12.set=ANDROID_RESOURCE
@@ -124,3 +126,4 @@ count=41
 3.set=ASSET
 5.base=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 33.set=ANDROID_RESOURCE
+41.file=C\:\\Users\\Edoardo\\Dropbox\\Cordova\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxxhdpi-v4\\icon.png
