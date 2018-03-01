@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
 INJECTED from C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
 INJECTED from C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
@@ -25,3 +26,30 @@ uses-sdk
 ADDED from C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:22:5-44
 	android:minSdkVersion
 		ADDED from C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:22:15-41
+=======
+ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+	package
+		ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:21:7-35
+		INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:21:36-61
+		INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:20:11-69
+	android:versionCode
+		ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:21:62-85
+		INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml
+uses-sdk
+ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:22:5-44
+	android:minSdkVersion
+		ADDED from C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\AndroidManifest.xml:22:15-41
+>>>>>>> 4f8393f213c6a9ecf31123c4bd4773d5f63c1ae2

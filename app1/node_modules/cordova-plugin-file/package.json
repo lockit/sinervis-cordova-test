@@ -22,7 +22,11 @@
   "_resolved": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-6.0.1.tgz",
   "_shasum": "49606b8c15a5688d4728f92e4a7325a061de07f5",
   "_spec": "cordova-plugin-file@6.0.1",
+<<<<<<< HEAD
   "_where": "C:\\ESERCIZI\\cordova_ionic\\app1\\app1",
+=======
+  "_where": "C:\\Users\\pc2\\Documents\\Cordova_ionic\\app1\\app1",
+>>>>>>> 4f8393f213c6a9ecf31123c4bd4773d5f63c1ae2
   "author": {
     "name": "Apache Software Foundation"
   },

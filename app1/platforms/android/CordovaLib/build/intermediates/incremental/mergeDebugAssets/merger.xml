@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\assets"/><source path="C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\ESERCIZI\cordova_ionic\app1\app1\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\assets"/><source path="C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\pc2\Documents\Cordova_Ionic\app1\app1\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>
+>>>>>>> 4f8393f213c6a9ecf31123c4bd4773d5f63c1ae2

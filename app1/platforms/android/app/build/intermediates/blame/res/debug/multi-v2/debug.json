@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\ESERCIZI\\cordova_ionic\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
             "map": [
                 {
                     "source": "C:\\ESERCIZI\\cordova_ionic\\app1\\app1\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+=======
+            "outputFile": "C:\\Users\\pc2\\Documents\\Cordova_Ionic\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\pc2\\Documents\\Cordova_Ionic\\app1\\app1\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+>>>>>>> 4f8393f213c6a9ecf31123c4bd4773d5f63c1ae2
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
