@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src &apos;self&apos; data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com https://restcountries.eu/ &apos;unsafe-eval&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; media-src *; img-src * data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -27,7 +27,15 @@
         #myImage {
             width: 100%;
         }
-		
+		#countries div {
+			overflow: auto;
+			height: 60px;
+			font-size: 20px;
+		}
+
+		#countries div img {
+			float: left;
+		}
 		#myGallery div {
 			overflow: auto;
 			height: 57px;
@@ -66,8 +74,8 @@
 					</div>
 				</div>
 				<div data-role="collapsible">
-					<h3>Section 2</h3>
-					<p>Section 2</p>
+					<h3>Countries</h3>
+					<div id="countries"></div>
 				</div>
 				<div data-role="collapsible">
 					<h3>Section 3</h3>
