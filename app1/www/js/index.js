@@ -15,7 +15,12 @@ var app = {
         app.galleryFolder = cordova.file.dataDirectory+ 'files/' +
                             camera_plugin.config.galleryFolder;
         app.refreshGallery();
-        app.getCountries('europe');
+
+        $("#europe").on("click", function(){app.getCountries("europe")});
+        $("#asia").on("click", function(){app.getCountries("asia")});
+        $("#africa").on("click", function(){app.getCountries("africa")});
+        $("#america").on("click", function(){app.getCountries("america")});
+        $("#oceania").on("click", function(){app.getCountries("oceania")});
     },
     refreshGallery: function(){
       window.resolveLocalFileSystemURL(app.galleryFolder, function(entry){
@@ -30,6 +35,7 @@ var app = {
         gallery.append(img);
       }
     },
+
     getCountries: function(region){
       $.ajax({
         url: app.countriesAPI+region
