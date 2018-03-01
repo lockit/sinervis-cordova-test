@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 01 12:16:38 CET 2018
+#Thu Mar 01 15:27:35 CET 2018
 5.base=C\:\\Users\\Alaa\\Documents\\Cordova_Ionic\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 42.base=C\:\\Users\\Alaa\\Documents\\Cordova_Ionic\\app1\\app1\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 32.set=ANDROID_RESOURCE

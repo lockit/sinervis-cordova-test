@@ -1,5 +1,7 @@
 
 var app = {
+
+    galleryFolder: null,
     
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -16,8 +18,36 @@ var app = {
         $("#cameraButton").on("click", function(){
             camera_plugin.capturePhoto();
         });
+        app.galleryFolder = cordova.file.dataDirectory + 'files/' + camera_plugin.config.galleryFolder;
+        app.refreshGallery();
 
+       
+    
+
+    },
+    refreshGallery: function() {
+        window.resolveLocalFileSystemURL(app.galleryFolder, function(entry){
+            entry.createReader().readEntries(app.loadGallery, app.errorGallery);
+        });
+    },
+
+    loadGallery: function(selection) {
+        
+        var gallery = $("#myGallery");
+        gallery.html("");
+        for(var i=0; i < selection.length; i++){
+            var img = '<img src="'+selection[i].nativeURL+'"/>'
+            gallery.append(img);
+        }
+
+    },
+    
+    errorGallery: function(error){
+        console.log(error)
     }
-};
+        
+}
+
+
 
 app.initialize();

@@ -28,6 +28,19 @@
 			width: auto;
 		
 		}
+		#myGallery{
+			overflow: auto;
+		}
+		#myGallery div {
+			overflow: auto;
+			height: 57px;
+			width: 31px;
+			float: left;
+		}
+		#myGallery div img{
+			width: 100%;
+			margin: 1%;
+		}
 		</style>
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
         <title>Rossana&apos;s Gallery</title>
@@ -48,9 +61,14 @@
 					<div>
 						<img id="myImage"/>
 					</div>
+					<p>Gallery</p>
+					<div>
+						<div id="myGallery"></div>
+					</div>
 				<div data-role="collapsible">
 					<h3>Section 2</h3>
 					<p>Section 2</p>
+					
 				</div>
 				<div data-role="collapsible">
 					<h3>Section 3</h3>
