@@ -18,6 +18,17 @@
 				margin: 5px !important;
 				position: relative !important;
 		}
+
+        #cameraButton {
+            height: 25px;
+            width: auto;
+        }
+
+        #myImage {
+            height: 300px;
+            width: auto;
+        }
+
 		</style>
         <title>Edo's Gallery</title>
     </head>
@@ -28,7 +39,12 @@
 			<div data-role="collapsible-set">
 				<div id="cjp-accordion1" data-role="collapsible" data-collapsed="false">
 					<h3>Camera Section</h3>
-					<p><a>Accedi alla fotocamera</a></p>
+					<div>
+                        <img id="cameraButton" src="img\icon_camera.png" alt="camera icon">
+                    </div>
+                    <div>
+                        <img id="myImage">
+                    </div>
 				</div>
 				<div data-role="collapsible">
 					<h3>Section 2</h3>
@@ -57,5 +73,6 @@
         </script>
         <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/camera_manager.js"></script>
     </body>
 </html>

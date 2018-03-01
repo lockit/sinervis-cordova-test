@@ -11,12 +11,10 @@ var app = {
 
     receivedEvent: function(id) {
         console.log('Received Event: ' + id);
-        document.addEventListener("deviceready", onCameraReady, false);
+        $("#cameraButton").on('click', function() {
+            camera_manager.capturePhoto();
+        });
     }
 };
 
 app.initialize();
-
-function onCameraReady() {
-    console.log(navigator.camera);
-}
