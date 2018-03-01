@@ -18,6 +18,16 @@
 				margin: 5px !important;
 				position: relative !important;
 		}
+		#cameraButton{
+			width: 30px;
+			height: auto;
+		}
+
+		#myImage{
+			height: 250px;
+			width: auto;
+		
+		}
 		</style>
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
         <title>Rossana&apos;s Gallery</title>
@@ -31,15 +41,13 @@
 			<div data-role="content">Introductory text can be placed here ...</div>
 			<div data-role="collapsible-set">
 				<div id="cjp-accordion1" data-role="collapsible" data-collapsed="false">
-					<h3>Section 1</h3>
-					<p><div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div></p>
-				</div>
+					<h3>Galleria 1</h3>
+					<div>
+						<img src="img/icon_camera.png" id="cameraButton"/>
+					</div>
+					<div>
+						<img id="myImage"/>
+					</div>
 				<div data-role="collapsible">
 					<h3>Section 2</h3>
 					<p>Section 2</p>
@@ -56,11 +64,16 @@
 			</div>
 			<!-- end page 1 footer -->
 		</div>
-<script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script><script type="text/javascript" id="jqm-trans-disable">
-		/* For having a faster transition */
-		$(document).on("mobileinit", function() {
-				$.mobile.defaultPageTransition = "none";
-				$.mobile.defaultDialogTransition = "none";
-		});
-		</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+		<script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script><script type="text/javascript" id="jqm-trans-disable">
+			/* For having a faster transition */
+			$(document).on("mobileinit", function() {
+					$.mobile.defaultPageTransition = "none";
+					$.mobile.defaultDialogTransition = "none";
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/camera_plugin.js"></script>
+
+	</body>
 </html>
