@@ -50,6 +50,12 @@ body {
     width: 50px;
 }
 
+li {
+    display: inline;
+    padding: 5px;
+}
+
+
 .countriesName {
     text-align: center;
 }

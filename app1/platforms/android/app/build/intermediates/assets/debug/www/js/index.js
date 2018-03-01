@@ -46,22 +46,26 @@ var app = {
             console.log(app.galleryFolder);
         })
 
-        app.loadCountries();
+        $('.region').on('click', function(){
+            app.loadCountriesByRegion($(this).attr('name'));
+            $("#countriesList").empty();
+        })
+        
     },
 
-    loadCountries: function(){
+    loadCountriesByRegion: function(region){
 			 $.ajax({
                 dataType: "json",
 				accepts: {
     				mycustomtype: 'application/json'
   				},
-            	url: "https://restcountries.eu/rest/v2/all",
+            	url: "https://restcountries.eu/rest/v2/region/" + region,
                 context: document.body 
           		}).done(app.fillListOfCountries);
     },
     
     fillListOfCountries: function(countries){
-        console.log(countries);
+        console.log(countries.length);
         for(var i = 0; i < countries.length; i++){
             $("#countriesList").append('<div><img class="gallery" src="'+ countries[i].flag + '">' + '<span class="countriesName">' + countries[i].name + '</span></div>');
         }
