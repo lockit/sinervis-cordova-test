@@ -22,6 +22,22 @@
           width: 30px;
           height: auto;
         }
+        #myImage{
+          width: 100%;
+        }
+        #myGallery{
+          overflow: auto;
+        }
+        #myGallery div{
+          overflow: auto;
+          width: 31%;
+          margin: 1%;
+          height: 57px;
+          float: left;
+        }
+        #myGallery div img{
+          width: 100%;
+        }
   		</style>
       <title>Gallery e altri test</title>
     </head>
@@ -38,9 +54,8 @@
           <div>
             <img id="myImage" />
           </div>
-					<p></p>
-          <p>Page 1 content goes here</p>
-          <p></p>
+          <div id="myGallery">
+          </div>
 				</div>
 				<div data-role="collapsible">
 					<h3>Section 2</h3>
