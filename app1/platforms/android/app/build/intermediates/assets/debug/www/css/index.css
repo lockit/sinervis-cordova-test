@@ -50,6 +50,10 @@ body {
     width: 50px;
 }
 
+.countriesName {
+    text-align: center;
+}
+
 #myImage {
     width: 100%;
 }

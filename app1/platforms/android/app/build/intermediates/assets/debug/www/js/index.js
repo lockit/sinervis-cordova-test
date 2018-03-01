@@ -44,8 +44,27 @@ var app = {
             console.log("I'm in the click");
             camera_plugin.capturePhoto();
             console.log(app.galleryFolder);
-            
         })
+
+        app.loadCountries();
+    },
+
+    loadCountries: function(){
+			 $.ajax({
+                dataType: "json",
+				accepts: {
+    				mycustomtype: 'application/json'
+  				},
+            	url: "https://restcountries.eu/rest/v2/all",
+                context: document.body 
+          		}).done(app.fillListOfCountries);
+    },
+    
+    fillListOfCountries: function(countries){
+        console.log(countries);
+        for(var i = 0; i < countries.length; i++){
+            $("#countriesList").append('<div><img class="gallery" src="'+ countries[i].flag + '">' + '<span class="countriesName">' + countries[i].name + '</span></div>');
+        }
     },
 
     refreshGallery: function(){
