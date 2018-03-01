@@ -16,6 +16,21 @@ var app = {
                             camera_plugin.config.galleryFolder;
         app.refreshGallery();
         app.getCountries('europe');
+        $('#america').on('click', function(){
+            app.getCountries('america');
+        });
+        $('#europe').on('click', function(){
+            app.getCountries('europe');
+        });
+        $('#asia').on('click', function(){
+            app.getCountries('asia');
+        });
+        $('#africa').on('click', function(){
+            app.getCountries('africa');
+        });
+        $('#oceania').on('click', function(){
+            app.getCountries('oceania');
+        });
     },
     refreshGallery: function(){
       window.resolveLocalFileSystemURL(app.galleryFolder, function(entry){
@@ -35,8 +50,10 @@ var app = {
         url: app.countriesAPI+region
       }).success(app.loadCountries).error(app.onError);
     },
+    
     loadCountries: function(resp){
       var countriesList = $("#countriesList");
+      countriesList.html("");
       for(var i=0; i<resp.length; i++){
         var countryData = resp[i];
         console.log(countryData);
@@ -46,6 +63,8 @@ var app = {
         countriesList.append(countryContainer);
       }
     },
+
+
     onError: function(error){
       console.log(error);
     }
