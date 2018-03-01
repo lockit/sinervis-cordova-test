@@ -1,7 +1,7 @@
 
 var app = {
     galleryFolder: null,
-    countriesAPI="https://restcountries.eu/rest/v2/all",
+    countriesAPI: 'https://restcountries.eu/rest/v2/all',
 
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -22,8 +22,8 @@ var app = {
         app.refreshGallery();
 
         $.ajax({
-            url: app.countriesAPI,
-        }).success(app.loadcountries)
+            url: app.countriesAPI
+        }).success(app.loadcountries).error(onError);
     },
 
     loadcountries: function(resp){
