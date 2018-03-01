@@ -24,15 +24,17 @@
     <body>
 		<div data-role="page" id="page1">
 			<div data-role="header"><h1>Page 1</h1></div>
-			<div data-role="content">Introductory text can be placed here ...</div>
+			<div data-role="content">Questa è un'app per provare qualche plugin</div>
 			<div data-role="collapsible-set">
 				<div id="cjp-accordion1" data-role="collapsible" data-collapsed="false">
-					<h3>Section 1</h3>
-					<p></p><p>Page 1 content goes here</p><p></p>
+					<h3>Take Photo</h3>
+					<img id="cameraButton" src="./img/camera.png" alt="Camera">
+					<br><br>
+					<img alt="Photo" id="myImage">
 				</div>
 				<div data-role="collapsible">
-					<h3>Section 2</h3>
-					<p>Section 2</p>
+					<h3>Gallery</h3>
+					<div id="myGallery"></div>
 				</div>
 				<div data-role="collapsible">
 					<h3>Section 3</h3>
@@ -46,11 +48,17 @@
 			</div>
 			<!-- end page 1 footer -->
 		</div>
-        <script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script><script type="text/javascript" id="jqm-trans-disable">
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+		<script type="text/javascript" id="jqm-trans-disable">
 		/* For having a faster transition */
 		$(document).on("mobileinit", function() {
 				$.mobile.defaultPageTransition = "none";
 				$.mobile.defaultDialogTransition = "none";
 		});
-		</script><script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+		</script>
+		<script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/camera_plugin.js"></script>
+		</body>
 </html>

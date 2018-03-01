@@ -17,6 +17,9 @@
  * under the License.
  */
 var app = {
+
+    galleryFolder: null,
+
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -28,18 +31,40 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        app.galleryFolder = cordova.file.dataDirectory + '/files/' + camera_plugin.config.folderName;
+        app.refreshGallery();
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
         console.log('Received Event: ' + id);
+        
+
+        $('#cameraButton').on('click', function(){
+            console.log("I'm in the click");
+            camera_plugin.capturePhoto();
+            console.log(app.galleryFolder);
+            
+        })
+    },
+
+    refreshGallery: function(){
+        console.log("I'm in the refreshGallery");
+        window.resolveLocalFileSystemURL(app.galleryFolder, function(entry){
+            entry.createReader().readEntries(app.loadGallery, app.errorGallery);
+        })
+    },
+
+    loadGallery: function(entries){
+        console.log("I'm in the loadGallery");
+        for(var i = 0; i < entries.length; i++){
+    
+            $("#myGallery").append('<img class="gallery" src="' + entries[i].nativeURL + '">');
+        }
+    },
+
+    errorGallery: function(){
+        console.log("Error while readEntries");
     }
 };
 
