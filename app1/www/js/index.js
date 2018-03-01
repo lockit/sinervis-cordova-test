@@ -17,6 +17,7 @@
  * under the License.
  */
 var app = {
+    galleryFolder: null,
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -36,7 +37,32 @@ var app = {
         $("#buttonTakePhoto").on("click", function() {
             cameraPlugin.capturePhoto();
         });
+        app.galleryFolder = cordova.file.dataDirectory+"files/"+cameraPlugin.config.galleryFolder;
+        app.refreshGallery();
+    },
+
+    refreshGallery: function() {
+        window.resolveLocalFileSystemURL(
+            app.galleryFolder, 
+            function(entry) {
+                entry.createReader().readEntries(app.loadGallery, app.errorGallery);
+            }, 
+            app.errorGallery
+        );
+    },
+    loadGallery: function(files) {        
+        var images="";
+        for(var i=0;i<files.length;i++) {
+            images+="\n<img class=\"imageGallery\" src=\""+files[i].nativeURL+"\"/>";
+        }
+        $("#gallery").html(images);
+        console.log("loadGallery");
+    },
+    errorGallery: function(error) {
+        console.log("error gallery");
+        console.log(error);
     }
+
 };
 
 app.initialize();
