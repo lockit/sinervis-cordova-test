@@ -18,6 +18,8 @@
  */
 var app = {
     galleryFolder: null,
+    countriesAPI: "https://restcountries.eu/rest/v2/region/",
+    region: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -36,6 +38,12 @@ var app = {
         console.log('Received Event: ' + id);
         $("#buttonTakePhoto").on("click", function() {
             cameraPlugin.capturePhoto();
+        });
+        app.setLinks();
+        $(".link").on("click", function() {
+            $.ajax({
+                url: app.countriesAPI+this.id,            
+            }).success(app.loadContries).error(app.errorContries);            
         });
         app.galleryFolder = cordova.file.dataDirectory+"files/"+cameraPlugin.config.galleryFolder;
         app.refreshGallery();
@@ -61,8 +69,31 @@ var app = {
     errorGallery: function(error) {
         console.log("error gallery");
         console.log(error);
-    }
-
+    },
+    // rest contries
+    loadContries: function(resp) {
+        console.log(resp);
+        var list=$("#countriesList");
+        list.html("");
+        for(var i=0;i<resp.length;i++) {
+            var container = $("<div></div>");
+            var data=resp[i];
+            container.append($("<img src=\""+data.flag+"\"/>"));
+            container.append($("<span>"+data.name+"</span>"));
+            list.append(container);
+        }
+    },
+    errorContries: function(error) {
+        console.log(error);
+    },
+    setLinks: function() {
+        var s="";
+        for(var i=0;i<app.region.length;i++) {
+            s+="\n<button type=\"button\" class=\"link\" id=\""+app.region[i]+"\">"+app.region[i]+"</button>";
+        }
+        $("#linkCountries").html(s);
+        //console.log("loadGallery");
+    }    
 };
 
 app.initialize();
