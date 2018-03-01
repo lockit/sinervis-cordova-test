@@ -43,10 +43,11 @@ var app = {
       for(var i=0; i<resp.length; i++){
         var countryData = resp[i];
         console.log(countryData);
-        var countryContainer = $("<div></div>");
-        countryContainer.append($('<img src="'+countryData.flag+'" />'));
-        countryContainer.append($('<span>'+countryData.name+'</span>'));
+        var countryContainer = $('<div class="container"></div>');
+        countryContainer.append($('<div class="flags"><img class="flag" src="'+countryData.flag+'" /></div>'));
+        countryContainer.append($('<div class="countriesName"><span>'+countryData.name+'</span></div>'));
         countriesList.append(countryContainer);
+        countriesList.append('<hr>');
       }
     },
     onError: function(error){
