@@ -1,6 +1,6 @@
 var app = {
     galleryFolder: null,
-    countriesAPI: 'https://restcountries.eu/rest/v2/all',
+    countriesAPI: 'https://restcountries.eu/rest/v2/region/',
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
@@ -15,9 +15,7 @@ var app = {
         app.galleryFolder = cordova.file.dataDirectory+ 'files/' +
                             camera_plugin.config.galleryFolder;
         app.refreshGallery();
-        $.ajax({
-          url: app.countriesAPI
-        }).success(app.loadCountries).error(app.onError);
+        app.getCountries('europe');
     },
     refreshGallery: function(){
       window.resolveLocalFileSystemURL(app.galleryFolder, function(entry){
@@ -31,6 +29,11 @@ var app = {
         var img = '<div><img src="'+entries[i].nativeURL+'" /></div>';
         gallery.append(img);
       }
+    },
+    getCountries: function(region){
+      $.ajax({
+        url: app.countriesAPI+region
+      }).success(app.loadCountries).error(app.onError);
     },
     loadCountries: function(resp){
       var countriesList = $("#countriesList");
