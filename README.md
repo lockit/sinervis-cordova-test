@@ -1,0 +1,1 @@
+# sinervis-cordova-test
