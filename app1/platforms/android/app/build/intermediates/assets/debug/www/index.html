@@ -25,9 +25,20 @@
         }
 
         #myImage {
-            height: auto;
-            width: 100%;
+            width: 75%;
         }
+		
+		#myGallery div {
+			overflow: auto;
+			height: 57px;
+			width: 31px;
+			float: left;
+		}
+
+		#myGallery div img {
+			width: 100%;
+			margin: 1%;
+		}
 
 		</style>
         <title>Edo's Gallery</title>
@@ -45,7 +56,8 @@
                     <div>
                         <img id="myImage">
 					</div>
-					<div id="myGallery"></div>
+					<div id="myGallery">
+					</div>
 				</div>
 				<div data-role="collapsible">
 					<h3>Section 2</h3>

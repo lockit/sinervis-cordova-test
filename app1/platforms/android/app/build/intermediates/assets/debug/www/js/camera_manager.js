@@ -18,6 +18,7 @@ var camera_manager = {
         var myImage = $(camera_manager.config.elementId);
         //Imposta come src dell'img l'imageURI
         myImage.attr('src', imageURI);
+        app.refreshGallery();
         camera_manager.movePhoto(imageURI);
     },
 
@@ -47,11 +48,11 @@ var camera_manager = {
         camera_manager.onResolveError
         );
     },
-    onMoveSuccess: function(){
-        console.log("");
+    onMoveSuccess: function(entry){
+        console.log(entry);
     }, 
 
-    onResolveError: function() {
-        console.log("");
+    onResolveError: function(error) {
+        console.log(error);
     },
 };

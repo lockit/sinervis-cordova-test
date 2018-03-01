@@ -6,6 +6,8 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
+    
+
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
     },
@@ -15,14 +17,24 @@ var app = {
         $("#cameraButton").on('click', function() {
             camera_manager.capturePhoto();
         });
-        this.galleryFolder = cordova.file.dataDirectory + 'files/' + camera_manager.galleryFolder;
+        this.galleryFolder = cordova.file.dataDirectory + 'files/' + camera_manager.config.galleryFolder;
+        app.refreshGallery();
     },
 
     refreshGallery: function() {
-        window.resolveLocalFileSystemURL(app.galleryFolder, function(emtry){
-            entry.createReader().readEntries(loadGallery, errorGallery);
+        window.resolveLocalFileSystemURL(app.galleryFolder, function(entry){
+            entry.createReader().readEntries(app.loadGallery,app.errorGallery);
         });
-    }
+    },
+    
+    loadGallery: function(selection){
+        var gallery = $("#myGallery");
+        gallery.html("");
+        for (var i = 0; i < selection.length; i++) {
+            var img ='<img src="' + selection[i].nativeURL + '"/>';
+            gallery.append(img);
+        }
+    },
 };
 
 app.initialize();
