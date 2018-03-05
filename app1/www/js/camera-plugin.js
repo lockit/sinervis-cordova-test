@@ -16,7 +16,9 @@ var camera_plugin = {
     onPhotoTaken:function(imageURI){
         var myImage = $(camera_plugin.config.elementID)
         myImage.attr('src',imageURI);
+        app.refreshGallery();
         camera_plugin.movePhoto(imageURI);
+
 
 
     },
